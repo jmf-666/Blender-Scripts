@@ -14,7 +14,7 @@ target_action = bpy.data.actions.get(target_action_name)
 shape_key_action = bpy.data.actions.get(shape_key_action_name)
 
 if not mesh or not armature or not target_action or not shape_key_action:
-    raise Exception("❌ Asegúrate de que los nombres del mesh, armature y acciones existen correctamente.")
+    raise Exception("Asegúrate de que los nombres del mesh, armature y acciones existen correctamente.")
 
 # Aseguramos que el armature tenga la Action asignada
 armature.animation_data_create()
